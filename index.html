@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HearthStone Match'em</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Start of Left Container -->
+        <div class="left-container">
+            <div class="main-container">
+                <button class="beginner-btn btn" onclick="beginnerLvl()">Beginner <img src="logo.png" alt=""></button>
+                <button class="advanced-btn btn" onclick="advancedLvl()">Advanced <img src="advanced.jpg" alt=""></button>
+                <button class="pro-btn btn" onclick="proLvl()">Pro <img src="premium.png" alt=""></button>
+                <div id="countDown"></div>
+                <div id="gameState"></div>
+                <div onclick="reset()"><img src="./restart.png" alt="" id="resetBtn"></div>
+                <span id="count">0</span>
+            </div>
+        </div>
+        <!-- Start of Right Container -->
+        <div class="right-container">
+            <div id="board"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    transition: 1s;
+}
+
+body {
+    background: url("./wallpaper.jpg");
+    background-size: cover;
+    margin: auto;
+    max-width: 1600px;
+    background-size: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.left-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.right-container {
+    float: right;
+    margin-top: 5px;
+    margin-right: 100px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px;
+}
+
+#resetBtn{
+    height: 50px;
+    margin-top: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    
+}
+#resetBtn:hover{
+    cursor: pointer;
+    background-color: #2b81cd;
+}
+#board {
+    margin-top: 50px;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 220px;
+    width: 140px;
+    margin: 2.5px;
+    box-shadow: 8px 7px 20px 4px black;
+    ;
+}
+
+.btn {
+    width: 350px;
+    border-radius: 5px;
+    font-size: 35px;
+    padding: 5px;
+    margin: 5px;
+    color: #d29c2e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(75, 44, 6);
+    border: none;
+    box-shadow: 5px 5px 6px 0px black;
+}
+.btn:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #2b81cd;
+}
+#count {
+    display: none;
+}
+
+.btn img {
+    height: 35px;
+    vertical-align: middle;
+}
+
+#countDown,
+#gameState {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-shadow: 10px 5px 16px #d29c2e;
+}
+.advanced-btn,.pro-btn{
+    font-style: italic;
+}
